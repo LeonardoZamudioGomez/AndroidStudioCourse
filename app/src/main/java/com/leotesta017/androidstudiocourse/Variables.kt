@@ -6,8 +6,11 @@ val age:Int = 21
 
 fun main()
 {
-    showMyName()
-    showMyAge()
+    showMyName() // Empty functions.
+    showMyAge(21) // Input parameter functions.
+    add(1, 2)
+    val mySubtract = subtract(10, 5) // Functions output parameters.
+    println(mySubtract)
 }
 
 fun showMyName()
@@ -15,10 +18,23 @@ fun showMyName()
     println("My name is Leo")
 }
 
-fun showMyAge()
+fun showMyAge(currentAge:Int = 21)
 {
-    println("My age is 21 years old")
+    println("My age is $currentAge years old")
 }
+
+fun add(firstNumber:Int, secondNumber:Int)
+{
+    println(firstNumber + secondNumber)
+}
+
+fun subtract(firstNumber:Int, secondNumber:Int):Int
+{
+    return firstNumber - secondNumber
+    //println("This message will not be seen by the return.")
+}
+
+fun subtractExampleOneLine(firstNumber:Int, secondNumber:Int):Int = firstNumber - secondNumber
 
 fun numericalVariables()
 {
