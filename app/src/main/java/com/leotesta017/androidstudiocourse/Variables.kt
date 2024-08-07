@@ -1,16 +1,33 @@
 //Leonardo
 package com.leotesta017.androidstudiocourse
 
-// Variables
+// Variables that can be called in any function.
+val age:Int = 21
 
 fun main()
+{
+    showMyName()
+    showMyAge()
+}
+
+fun showMyName()
+{
+    println("My name is Leo")
+}
+
+fun showMyAge()
+{
+    println("My age is 21 years old")
+}
+
+fun numericalVariables()
 {
     /**
      * Numerical Variables.
      */
 
     // Variable num INT (-2, 147, 483, 647 a 2, 147, 483, 647)
-    val age:Int = 21
+    //val age:Int = 21
     var age2:Int = 22
 
     // Num more big -> Long (-9, 223, 372, 036, 854, 775, 807 a 9, 223, 372, 036, 854, 775, 807)
@@ -22,24 +39,27 @@ fun main()
     // Double -> {fourteen decimal places}.
     val doubleExample:Double = 21.14
 
-    //println("Add age + age2:")
-    //println(age + age2)
+    println("Add age + age2:")
+    println(age + age2)
 
-    //println("Subtract age - age2:")
-    //println(age - age2)
+    println("Subtract age - age2:")
+    println(age - age2)
 
-    //println("Multiply age * age2:")
-    //println(age * age2)
+    println("Multiply age * age2:")
+    println(age * age2)
 
-    //println("Divide age / age2:")
-    //println(age / age2)
+    println("Divide age / age2:")
+    println(age / age2)
 
-    //println("Module age % age2:")
-    //println(age % age2)
+    println("Module age % age2:")
+    println(age % age2)
 
     var exampleAdd = age + floatExample.toInt()
     //println(exampleAdd)
+}
 
+fun alphanumericVariables()
+{
     /**
      * Alphanumeric variables.
      */
@@ -56,8 +76,11 @@ fun main()
     //println(stringExample + stringExample1) // Concatenation.
     var stringConcatenation:String = "Hello"
     stringConcatenation = "Hello, this is $stringExample1 and I have $age years old"
-    //println(stringConcatenation)
+    println(stringConcatenation)
+}
 
+fun booleanVariables()
+{
     /**
      * Boolean variables.
      */
