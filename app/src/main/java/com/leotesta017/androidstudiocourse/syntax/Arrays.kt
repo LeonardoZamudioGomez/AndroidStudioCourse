@@ -1,4 +1,4 @@
-package com.leotesta017.androidstudiocourse
+package com.leotesta017.androidstudiocourse.syntax
 
 fun main() {
     var name: String = "Leo"

@@ -1,5 +1,5 @@
 //Leonardo
-package com.leotesta017.androidstudiocourse
+package com.leotesta017.androidstudiocourse.syntax
 
 // Variables that can be called in any function.
 val age:Int = 21
